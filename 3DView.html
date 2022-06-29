@@ -1,27 +1,61 @@
-<body>
-    <div class = "header">
-        <h1>Header</h1>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <div class = loader>
+        
     </div>
+</head>
+
+<body>
+    <div class = "container">
+        <div id = "back">
+            <a href = "index.html">
+            <img alt="back_arrow" src= "img/back_arrow.png">
+            </a>
+        </div>
+        <div id = "containerimg">
+            <a  id = "seamstress">
+                <img alt="back_arrow" src= "img/icon1.png">
+            </a>   
+        </div>
+        <div id = "containerimg">
+            <a id = "hood">
+                <img alt="back_arrow" src= "img/icon2.png">
+            </a>   
+        </div>
+         
+    </div>
+
         <div class="frame">
+            
             <div id="result">
-            <canvas></canvas>
+                <canvas></canvas>
+                <div id = "my-gui-container"></div>
             </div>
             <div id="editor">
             <h1>hello hi look</h1>
             <p>die die die die die die</p>
             <p>expectum lorem ipsum the quick brown dog jumped over the lazy fox</p>
             <div id="ui">
-                <button type="button" id = "cube" data-size="25%">small</button>
-                <button type="button" id = "cylinder" data-size="50%">medium</button>
+                <button type="button" data-size="25%">small</button>
+                <button type="button" data-size="50%">medium</button>
                 <button type="button" data-size="75%">large</button>
             </div>
             </div>
         </div>
-    
+
+
+    <script>
+        $(window).on("load",function(){
+            $(".loader").fadeOut("slow")
+        });
+    </script>
 </body>
-  <link rel="stylesheet" href="styles.css">
- 
-  <script type="module" src = "bundle.js"></script>
+<script type="module" src = "bundle.js"></script>
+
+
 
 
   

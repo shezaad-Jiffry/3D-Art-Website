@@ -50,8 +50,25 @@ html {
     font-family: monospace;
     color: white;
     font-size: 15px;
+    
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 60px;
+  }
+  #containerimg{
+    justify-content: left;
+    border-radius:30px;
+    height: 45px;
+    margin-left: 250px;
+  }
 
-  
+  #back {
+    justify-content: left;
+    border-radius:30px;
+    height: 45px;
   }
   .home{
     margin: 0;
@@ -92,8 +109,29 @@ html {
     opacity: 0.5;
   }
   img {
-width: 100%;
-height: 100%;
-object-fit: fill;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 
-}
+  }
+  .loader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #444;
+  }
+  #my-gui-container {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  #result {
+    position: relative;
+  }

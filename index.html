@@ -2,6 +2,8 @@
     <link rel="stylesheet" href="styles.css">
     <script type="module" src = "js/main.js"></script>
     <script src="js/three.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body class = "home">
     <div class="header">
@@ -27,6 +29,14 @@
         </a>
         
     </div>
+    <div class = loader>
+        
+    </div>
+    <script>
+      $(window).on("load",function(){
+          $(".loader").fadeOut("slow")
+      });
+  </script>
 </body>
 
 
